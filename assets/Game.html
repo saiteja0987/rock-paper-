@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Game.css" />
+    <title>Rock Paper Scissors</title>
+  </head>
+  <body>
+    <div id="scoreZone">
+      <div><span id="score-user" class="displayText">0</span></div>
+      <div class="displayText">-</div>
+      <div><span id="score-computer" class="displayText">0</span></div>
+    </div>
+    <div id="gameZone">
+      <div id="userArea">
+        <span class="displayText">You</span>
+        <div>
+          <img class="handImage" id="rock-user" src="./assets/rock-hand.png" />
+          <img
+            class="handImage"
+            id="paper-user"
+            src="./assets/paper-hand.png"
+          />
+          <img
+            class="handImage"
+            id="scissors-user"
+            src="./assets/scissors-hand.png"
+          />
+        </div>
+        <div id="userButtons">
+          <img id="rockButton" class="logo" src="./assets/rock-logo.png" />
+          <img id="paperButton" class="logo" src="./assets/paper-logo.png" />
+          <img
+            id="scissorsButton"
+            class="logo"
+            src="./assets/scissors-logo.png"
+          />
+        </div>
+      </div>
+      <div><img id="vsImage" src="./assets/vs.png" /></div>
+      <div id="computerArea">
+        <span class="displayText">Comp</span>
+        <div>
+          <img class="handImage" id="rock-comp" src="./assets/rock-hand.png" />
+          <img
+            class="handImage"
+            id="paper-comp"
+            src="./assets/paper-hand.png"
+          />
+          <img
+            class="handImage"
+            id="scissors-comp"
+            src="./assets/scissors-hand.png"
+          />
+        </div>
+      </div>
+    </div>
+    <div>
+      <button id="playAgain">Play Again</button>
+    </div>
+    <script src="./game.js"></script>
+  </body>
+</html>
